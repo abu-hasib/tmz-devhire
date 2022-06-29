@@ -28,7 +28,7 @@ function App() {
     fetchData();
   }, [dispatch]);
   return (
-    <div className="grid App">
+    <div className={`grid App ${isOpen ? "adjust" : ""}`}>
       <SideBar isOpen={isOpen} />
       <Home {...{ isOpen, setIsOpen }} />
     </div>

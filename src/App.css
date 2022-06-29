@@ -5,6 +5,10 @@
   overflow-x: hidden;
 }
 
+.adjust {
+  grid-template-columns: 0% 100%;
+}
+
 .App > *:first-child {
   position: relative;
   right: 3%;
@@ -32,7 +36,7 @@
 }
 
 .hidden {
-  transform: translateX(-100%);
+  transform: translateX(-100vw);
 }
 
 .logo {
@@ -42,6 +46,7 @@
 .App > *:nth-child(2) {
   /* grid-column: span 4; */
   padding: 6em 2em;
+  transition: 0.4s;
 }
 
 .App-logo {
